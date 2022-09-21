@@ -1,0 +1,11 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: D:/xin/datasets/CV/pictor-ppe/train.txt 
+val: D:/xin/datasets/CV/pictor-ppe/val.txt  
+test: D:/xin/datasets/CV/pictor-ppe/test.txt 
+ 
+# number of classes
+nc: 1
+
+# class names
+names: [ 'person' ]
