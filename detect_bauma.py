@@ -92,8 +92,12 @@ def detect(save_img=False):
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
 
     # Get customized names and colors
-    names[77] = 'customer specific object' # replace('teddy bear','customer specific object')
-    colors = {0: (67, 196, 245), 39: (255, 0, 0), 77: (255, 0, 255)} # Persons in Liebherr yellow... the toy in purple... the bottle in blue
+    names[77] = "customer specific object"  # replace('teddy bear','customer specific object')
+    colors = {
+        0: (0, 208, 255),
+        39: (144, 191, 93),
+        77: (194, 178, 139),
+    }  # Persons in Liebherr yellow... the toy in purple... the bottle in blue
 
     # Run inference
     if device.type != "cpu":
