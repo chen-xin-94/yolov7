@@ -189,7 +189,7 @@ def detect(save_img=False):
                             im0,
                             label=label,
                             color=colors[int(cls)],
-                            line_thickness=1,
+                            line_thickness=3,
                         )
 
             # Print time (inference + NMS)
