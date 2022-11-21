@@ -201,7 +201,7 @@ def detect(save_img=False):
 
             # Stream results
             if view_img:
-                cv2.imshow(str(p), im0)
+                cv2.imshow(str(p), img_danger)
                 cv2.waitKey(1)  # 1 millisecond
 
             # Save results (image with detections)
