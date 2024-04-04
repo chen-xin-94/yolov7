@@ -342,7 +342,7 @@ def clip_coords(boxes, img_shape):
 
 
 def bbox_iou(box1, box2, x1y1x2y2=True, GIoU=False, DIoU=False, CIoU=False, eps=1e-7):
-    # Returns the IoU of box1 to box2. box1 is 4, box2 is nx4
+    # Returns the IoU of box1 to box2. box1 shape is 4 or 4xn, box2 shape is nx4
     box2 = box2.T
 
     # Get the coordinates of bounding boxes
